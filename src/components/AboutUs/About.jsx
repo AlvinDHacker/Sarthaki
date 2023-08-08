@@ -24,7 +24,7 @@ const About = () => {
       <ol class="relative border-l border-gray-200 dark:border-gray-700">
       {
           data.map((values, i) => {
-            <AboutItem key={i} time={values.time} event={values.event} desc={values.desc}/>
+            return <AboutItem key={i} time={values.time} event={values.event} desc={values.desc}/>
           })
       }       
       </ol>

@@ -1,0 +1,43 @@
+/* Animation */
+h6 div span {
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.links a {
+    transition: all 0.3s ease;
+}
+
+.links a:hover {
+    color: white;
+    padding-left: 10px;
+}
+.navLinks a {
+    transition: all 0.3s ease;
+}
+
+.navLinks a:hover {
+    color: blue;
+    padding-left: 10px;
+}
+
+.zoom-in figure * {
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.zoom-in figure:hover * {
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}

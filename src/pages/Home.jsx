@@ -1,12 +1,12 @@
-import Navbar from '../components/Navbar'
+import About from '../components/AboutUs/About'
 import Hero from '../components/Home/Hero'
-import Footer from '../components/Footer'
 
 function Home() {
 
   return (
     <>
       <Hero/>
+      <About/>
     </>
   )
 }

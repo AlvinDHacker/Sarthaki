@@ -1,3 +1,4 @@
+import { Phone } from "lucide-react";
 import React from "react";
 
 const ServiceItem = ({ head, desc }) => {
@@ -10,11 +11,13 @@ const ServiceItem = ({ head, desc }) => {
         <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
           {desc}
         </p>
+        <div className="w-[75%] bg-gray-500"/>
+        <div className="flex justify-between">
         <a
           href="#"
-          class="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center"
+          class="text-blue-600 dark:text-blue-500 hover:text-gray-800 font-medium text-lg inline-flex items-center"
         >
-          Read more
+          Know more
           <svg
             class="w-3.5 h-3.5 ml-2"
             aria-hidden="true"
@@ -31,6 +34,8 @@ const ServiceItem = ({ head, desc }) => {
             />
           </svg>
         </a>
+        <Phone/>
+        </div>
       </div>
     </div>
   );

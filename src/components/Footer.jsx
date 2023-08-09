@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className='relative'>
     <div className="absolute top-0 w-full bg-gray-800 text-gray-300 pb-3 pt-5 rounded-tl-[125px]">
-      <div className="max-w-[1240px] mx-auto grid grid-cols-3 md:grid-cols-5 border-b-2 border-gray-600 py-8">
+      <div className="max-w-[1240px] mx-auto grid md:grid-cols-5 grid-cols-2 border-b-2 border-gray-600 py-8">
         <div className='ml-5 pt-3'>
           <div className='zoom-in'><figure><img className='rounded-[50%]' width={180} src={logo} alt="logo" /></figure></div>
           {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, molestias. Harum aliquid repudiandae soluta itaque.</p> */}

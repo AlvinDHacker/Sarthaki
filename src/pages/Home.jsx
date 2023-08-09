@@ -1,4 +1,3 @@
-import About from '../components/AboutUs/About'
 import Hero from '../components/Home/Hero'
 
 function Home() {
@@ -6,7 +5,6 @@ function Home() {
   return (
     <>
       <Hero/>
-      <About/>
     </>
   )
 }

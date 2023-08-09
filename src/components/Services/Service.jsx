@@ -15,6 +15,26 @@ const Service = () => {
       head: "Payroll Management :",
       desc: "Simplify your payroll processes with our efficient payroll management services. We handle payroll calculations, tax deductions, direct deposits, and statutory compliance, leaving you free to focus on core business activities.",
     },
+    {
+      head: "Financial Analysis and Reporting :",
+      desc: "Gain valuable insights into your business&#39;s performance with our comprehensive financial analysis and reporting services. Our detailed reports help you make informed decisions and identify areas for improvement.",
+    },
+    {
+      head: "AI-Enhanced Auditing :",
+      desc: "Experience faster and more accurate audits with our AI-enhanced auditing services. Our advanced tools provide a thorough examination of your financial records, ensuring compliance and identifying potential risks.",
+    },
+    {
+      head: "Compliance and Regulatory Services :",
+      desc: "Navigate the complex landscape of regulatory requirements effortlessly with our compliance services. We help you stay compliant with various financial and regulatory frameworks, reducing the risk of penalties and fines.",
+    },
+    {
+      head: "CFO Advisory Services :",
+      desc: "Get access to expert financial advice with our CFO advisory services. Our experienced CFOs provide strategic financial planning and guidance to help you achieve your business objectives.",
+    },
+    {
+      head: "Business Advisory Services :",
+      desc: "Partner with us for personalized business advisory services. We assist you in setting financial goals, devising growth strategies, and overcoming financial challenges to drive your business forward.",
+    },
   ];
   return (
     <div className="">
@@ -65,7 +85,7 @@ const Service = () => {
       </section>
 
       <section class="bg-white dark:bg-gray-900">
-        <div class="grid grid-cols-3 py-8 px-4 gap-7 mx-auto ">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2  py-8 px-4 gap-7 mx-auto ">
           {data.map((values, index) => {
             return (
               <ServiceItem key={index} head={values.head} desc={values.desc} />

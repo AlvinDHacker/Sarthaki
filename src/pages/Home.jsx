@@ -5,8 +5,8 @@ import Slider from '../components/Home/Slider'
 function Home() {
   const slides = [
     { image: '/image.jpeg'},
-    { image: '/image.jpeg'},
-    { image: '/image.jpeg'},
+    { image: '/person2.jpeg'},
+    { image: '/person3.jpeg'},
     { image: '/image.jpeg'},
     { image: '/image.jpeg'}
   ];

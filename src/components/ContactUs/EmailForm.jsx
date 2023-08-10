@@ -12,7 +12,7 @@ function ContactForm() {
             </div>;
     }
     return (
-        <form onSubmit={handleSubmit} className="email-form">
+        <form onSubmit={handleSubmit} className="bg-white border-gray-200 shadow hover:shadow-2xl sm:w-[500px] w-auto email-form">
             <div className="">
                 {/* <div className="w-full flex gap-5"> */}
                 <div className="pb-5">

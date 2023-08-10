@@ -20,6 +20,7 @@ function Home() {
   return (
     <>
       <Hero/>
+
       <Slider />
       <div className='w-[350px] h-[190px] xs:w-[450px] xs:h-[250px] sm:w-[500px] sm:h-[280px] lg:w-[1210px] md:h-[620px] md:w-[1020px] mt-5' style={containerStyles}>
         <Carousel slides={slides} />

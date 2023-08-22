@@ -14,7 +14,7 @@ import OurTeam from './pages/OurTeam'
 import AboutUs from './pages/AboutUs'
 import Clients from './pages/Clients'
 import Industries from './pages/Industries'
-import Resources from './pages/Resources'
+import Pricing from './pages/Pricing'
 import Services from './pages/Services'
 import Testimonials from './pages/Testimonials'
 import Careers from './pages/Careers'
@@ -29,7 +29,7 @@ const router = createBrowserRouter(createRoutesFromChildren(
     <Route path="industries" element={<Industries />} />
     <Route path="clients" element={<Clients />} />
     <Route path="testimonials" element={<Testimonials />} />
-    <Route path="resources" element={<Resources />} />
+    <Route path="pricing" element={<Pricing />} />
     <Route path="careers" element={<Careers />} />
     <Route path="contactUs" element={<ContactUs />} />
   </Route>

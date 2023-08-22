@@ -9,7 +9,7 @@ function ContactForm() {
         return <div className="info-box flex flex-col justify-center items-center">
             <FaSmile className='text-blue-500 text-4xl' />
             <h3>Contact Form Submitted!</h3>
-            </div>;
+        </div>;
     }
     return (
         <form onSubmit={handleSubmit} className="bg-white border-gray-200 shadow hover:shadow-2xl sm:w-[500px] w-auto email-form">
@@ -37,17 +37,76 @@ function ContactForm() {
                 />
 
                 <div className="pb-5">
-                    <input id="subject" type="text" name="subject" className='w-full' placeholder="Subject" required />
+                    <input id="phone" type="number" name="phone" className='w-full' placeholder="Phone" required />
                 </div>
 
                 <ValidationError
-                    prefix="Subject"
-                    field="subject"
+                    prefix="Phone"
+                    field="phone"
                     errors={state.errors}
                 />
 
                 <div className="pb-5">
-                    <textarea id="message" name="message" rows="6" className='w-full' placeholder="Message" required></textarea>
+                    <input id="company" type="text" name="company" className='w-full' placeholder="Company Name" required />
+                </div>
+
+                <ValidationError
+                    prefix="Company Name"
+                    field="company"
+                    errors={state.errors}
+                />
+
+                <div className="pb-5">
+                    <label for="services">Services of Interest: </label>
+                    <select className='mt-3' id="services" name="services">
+                        <option>Bookkeeping and Financial Statements</option>
+                        <option>Tax Planning and Compliance</option>
+                        <option>Payroll Management</option>
+                        <option>Financial Analysis and Reporting</option>
+                        <option>AI-Enhanced Auditing</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <ValidationError
+                    prefix="Services"
+                    field="services"
+                    errors={state.errors}
+                />
+
+                <div className="pb-5">
+                    <label for="contactMethod">Preferred Contact Method: </label>
+                    <select className='mt-3' id="contactMethod" name="contactMethod">
+                        <option>Email</option>
+                        <option>Phone</option>
+                    </select>
+                </div>
+
+                <ValidationError
+                    prefix="ContactMethod"
+                    field="contactMethod"
+                    errors={state.errors}
+                />
+
+                <div className="pb-5">
+                    <label for="hearAboutUs">How did you hear about us? </label>
+                    <select className='mt-3' id="hearAboutUs" name="hearAboutUs">
+                        <option>Referral</option>
+                        <option>Search Engine</option>
+                        <option>Social Media</option>
+                        <option>Advertisement</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <ValidationError
+                    prefix="HearAboutUs"
+                    field="hearAboutUs"
+                    errors={state.errors}
+                />
+
+                <div className="pb-5">
+                    <textarea id="message" name="message" rows="2" className='w-full' placeholder="Message" required></textarea>
                 </div>
 
                 <ValidationError
